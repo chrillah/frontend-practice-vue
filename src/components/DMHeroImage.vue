@@ -1,0 +1,49 @@
+<template>
+  <div class="item-container">
+    <div class="image-wrapper">
+      <img :src="image" alt="An image" />
+    </div>
+    <div class="detail-wrapper">
+      <p>({{ number }})</p>
+      <p>{{ typeOfProduct }}</p>
+    </div>
+  </div>
+</template>
+
+<script setup lang="ts">
+  import { defineProps } from 'vue'
+
+  defineProps({
+    image: String,
+    number: String,
+    typeOfProduct: String
+  })
+</script>
+
+<style scoped>
+  p {
+    margin: 0;
+    padding: 0;
+    font-family: var(--dm-sans-font);
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  .image-wrapper {
+    border: 4px solid var(--dm-black);
+    height: 560px;
+    overflow: hidden;
+    background-color: var(--dm-peach);
+  }
+
+  img{
+    width: auto;
+    max-width: 100%;
+  }
+
+  .detail-wrapper{
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  }
+</style>

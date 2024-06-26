@@ -1,0 +1,20 @@
+/* Déplacé Maison settings */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+:root {
+  /* Déplacé Maison settings */
+  --dm-white: #fcf9ee;
+  --dm-yellow: #ddc92a;
+  --dm-peach: #e7d6c4;
+  --dm-black: #141414;
+  /* --dm-sans-font: 'Anek Telugu', sans-serif; */
+  --dm-sans-font: 'Syne', sans-serif;
+  --dm-script-font: 'Permanent Marker', cursive;
+  --dm-display-font: 'League Gothic', sans-serif;
+}
+
+body {
+  background: var(--dm-white);
+}
