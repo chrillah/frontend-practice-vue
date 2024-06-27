@@ -1,6 +1,7 @@
 <template>
-  <div class="hero-wrapper">
-    <div class="hero">
+  <div class="hero-wrapper grid-container">
+    <div></div>
+    <div class="hero grid-item">
       <div class="title-wrapper">
         <div class="top">
           <h1>SPRING,</h1>
@@ -56,15 +57,11 @@
 <style scoped>
   .hero-wrapper {
     margin-top: 6rem;
-    display: flex;
-    justify-content: center;
   }
   .hero {
-    padding-left: 20%;
     width: 100%;
     display: grid;
     gap: 1rem;
-    max-width: 800px;
   }
 
   .image-wrapper {

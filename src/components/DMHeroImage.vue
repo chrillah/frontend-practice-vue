@@ -11,8 +11,6 @@
 </template>
 
 <script setup lang="ts">
-  import { defineProps } from 'vue'
-
   defineProps({
     image: String,
     number: String,
@@ -29,18 +27,18 @@
     font-size: 12px;
   }
   .image-wrapper {
-    border: 4px solid var(--dm-black);
+    border: var(--dm-stroke-weight) solid var(--dm-black);
     height: 560px;
     overflow: hidden;
     background-color: var(--dm-peach);
   }
 
-  img{
+  img {
     width: auto;
     max-width: 100%;
   }
 
-  .detail-wrapper{
+  .detail-wrapper {
     padding-top: 5px;
     display: flex;
     justify-content: space-between;
