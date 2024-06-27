@@ -21,9 +21,32 @@ body {
   margin: 0;
 }
 
+a {
+  color: var(--dm-black);
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button-detail {
+  fill: var(--dm-black);
+  stroke-width: 0px;
+}
+
+.button-wrapper {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  padding: 0 1rem;
 }
 
 .grid-item {

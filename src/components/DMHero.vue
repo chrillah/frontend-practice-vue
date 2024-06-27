@@ -58,6 +58,7 @@
   .hero-wrapper {
     margin-top: 6rem;
   }
+
   .hero {
     width: 100%;
     display: grid;
@@ -74,10 +75,11 @@
     margin: 0;
     padding: 0;
     font-family: var(--dm-sans-font);
-    font-size: 7rem;
+    font-size: 8rem;
     text-align: right;
     line-height: 5.5rem;
     color: var(--dm-black);
+    letter-spacing: -10px;
   }
 
   h2 {
@@ -88,6 +90,23 @@
     line-height: 3rem;
     font-size: 3rem;
     color: var(--dm-black);
+  }
+
+  @media (max-width: 868px) {
+    .image-wrapper {
+      grid-template-columns: 1fr;
+    }
+
+    h1 {
+      font-size: 4rem;
+      letter-spacing: -1px;
+      line-height: 3rem;
+    }
+
+    h2 {
+      line-height: 1.1rem;
+      font-size: 1.2rem;
+    }
   }
 
   .bottom {
@@ -105,23 +124,5 @@
     font-family: var(--dm-sans-font);
     text-transform: uppercase;
     color: var(--dm-black);
-  }
-
-  .button-detail {
-    fill: var(--dm-black);
-    stroke-width: 0px;
-  }
-
-  button {
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-
-  .button-wrapper {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    gap: 8px;
   }
 </style>
