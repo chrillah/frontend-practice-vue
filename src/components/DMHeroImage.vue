@@ -26,11 +26,39 @@
     text-transform: uppercase;
     font-size: 12px;
   }
+
   .image-wrapper {
     border: var(--dm-stroke-weight) solid var(--dm-black);
-    height: 560px;
+    height: 380px;
     overflow: hidden;
     background-color: var(--dm-peach);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (min-width: 467px) {
+    .image-wrapper {
+      height: 490px;
+    }
+  }
+
+  @media (min-width: 625px) {
+    .image-wrapper {
+      height: 600px;
+    }
+  }
+
+  @media (min-width: 680px) {
+    .image-wrapper {
+      height: 380px;
+    }
+  }
+
+  @media (min-width: 820px) {
+    .image-wrapper {
+      height: 550px;
+    }
   }
 
   img {

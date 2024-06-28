@@ -56,7 +56,7 @@
 </script>
 <style scoped>
   .hero-wrapper {
-    margin-top: 6rem;
+    margin-top: 10rem;
   }
 
   .hero {
@@ -67,7 +67,7 @@
 
   .image-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1rem;
   }
 
@@ -75,11 +75,11 @@
     margin: 0;
     padding: 0;
     font-family: var(--dm-sans-font);
-    font-size: 8rem;
     text-align: right;
-    line-height: 5.5rem;
     color: var(--dm-black);
-    letter-spacing: -10px;
+    letter-spacing: -3px;
+    line-height: 2rem;
+    font-size: 2.5rem;
   }
 
   h2 {
@@ -87,12 +87,73 @@
     padding: 0;
     font-family: var(--dm-script-font);
     text-align: center;
-    line-height: 3rem;
-    font-size: 3rem;
     color: var(--dm-black);
+    line-height: 1rem;
+    font-size: 1rem;
   }
 
-  @media (max-width: 868px) {
+  @media (min-width: 467px) {
+    h1 {
+      letter-spacing: -6px;
+      line-height: 2.5rem;
+      font-size: 3.5rem;
+    }
+
+    h2 {
+      line-height: 1.5rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (min-width: 625px) {
+    h1 {
+      letter-spacing: -6px;
+      line-height: 3rem;
+      font-size: 4.5rem;
+    }
+
+    h2 {
+      line-height: 2rem;
+      font-size: 2rem;
+    }
+  }
+
+  @media (min-width: 680px) {
+    h1 {
+      letter-spacing: -8px;
+      line-height: 3rem;
+      font-size: 5rem;
+    }
+
+    h2 {
+      line-height: 2.5rem;
+      font-size: 3rem;
+    }
+  }
+
+  @media (min-width: 680px) {
+    .hero-wrapper {
+      margin-top: 6rem;
+    }
+    .image-wrapper {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (min-width: 820px) {
+    h1 {
+      letter-spacing: -10px;
+      font-size: 8rem;
+      line-height: 5.5rem;
+    }
+
+    h2 {
+      line-height: 3rem;
+      font-size: 3rem;
+    }
+  }
+
+  /* @media (min-width: 868px) {
     .image-wrapper {
       grid-template-columns: 1fr;
     }
@@ -107,10 +168,28 @@
       line-height: 1.1rem;
       font-size: 1.2rem;
     }
-  }
+  } */
+
+  /* @media (max-width: 868px) {
+    .image-wrapper {
+      grid-template-columns: 1fr;
+    }
+
+    h1 {
+      font-size: 4rem;
+      letter-spacing: -1px;
+      line-height: 3rem;
+    }
+
+    h2 {
+      line-height: 1.1rem;
+      font-size: 1.2rem;
+    }
+  } */
 
   .bottom {
     display: flex;
+    align-items: center;
     gap: 1rem;
   }
 
