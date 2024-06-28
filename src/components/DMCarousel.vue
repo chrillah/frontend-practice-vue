@@ -7,7 +7,7 @@
 <script setup lang="ts">
   import DMProductItem from './DMProductItem.vue'
 
-  type Product = {
+  export type Product = {
     image: string
     name: string
     oldPrice: number
@@ -16,71 +16,29 @@
 
   const products: Product[] = [
     {
-      image: '',
+      image: '/frontend-practice-misc_cactus.png',
       name: 'Cactus',
       oldPrice: 300,
       newPrice: 180
     },
     {
-      image: '',
-      name: 'Cactus',
-      oldPrice: 300,
-      newPrice: 180
+      image: '/frontend-practice-misc_duran.png',
+      name: 'Duran',
+      oldPrice: 240,
+      newPrice: 144
     },
     {
-      image: '',
-      name: 'Cactus',
-      oldPrice: 300,
-      newPrice: 180
+      image: '/frontend-practice-misc_the-eye.png',
+      name: 'The eye',
+      oldPrice: 240,
+      newPrice: 144
     },
     {
-      image: '',
-      name: 'Cactus',
-      oldPrice: 300,
-      newPrice: 180
-    },
-    {
-      image: '',
-      name: 'Cactus',
-      oldPrice: 300,
-      newPrice: 180
-    },
-    {
-      image: '',
-      name: 'Cactus',
-      oldPrice: 300,
-      newPrice: 180
-    },
-    {
-      image: '',
-      name: 'Cactus',
-      oldPrice: 300,
-      newPrice: 180
-    },
-    {
-      image: '',
-      name: 'Cactus',
-      oldPrice: 300,
-      newPrice: 180
-    },
-    {
-      image: '',
-      name: 'Cactus',
-      oldPrice: 300,
-      newPrice: 180
-    },
-    {
-      image: '',
-      name: 'Cactus',
-      oldPrice: 300,
-      newPrice: 180
-    },
-    {
-      image: '',
-      name: 'Cactus',
-      oldPrice: 300,
-      newPrice: 180
-    },
+      image: '/frontend-practice-misc_carnera.png',
+      name: 'Carnera',
+      oldPrice: 240,
+      newPrice: 144
+    }
   ]
 </script>
 
