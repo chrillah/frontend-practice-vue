@@ -7,8 +7,8 @@
           id="Layer_1"
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
-          width="144.01"
-          height="113.73"
+          width="100"
+          height="60"
           viewBox="0 0 144.01 113.73"
         >
           <path
@@ -39,19 +39,21 @@
     padding: 0;
   }
 
-  .container,
-  .item {
+  .container {
+    margin-top: 4rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
   }
 
-  .extra{
-    display: none;
+  .item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
   }
+
   .gibson {
-    position: relative;
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 45px auto;
+    margin-right: 6rem;
   }
 
   .plate-detail {
@@ -61,13 +63,42 @@
   }
 
   .gibson p {
-    position: absolute;
-    padding-left: 4rem;
+    padding-top: 12px;
     font-family: var(--dm-script-font);
-    font-size: 2rem;
+    font-size: 1.3rem;
+    white-space: nowrap;
   }
 
   .text2 {
     font-family: var(--dm-sans-font);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1rem;
+  }
+
+  @media (min-width: 612px) {
+    .item {
+      grid-template-columns: 200px auto;
+      gap: 2rem;
+    }
+
+    .text2 {
+      max-width: 300px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .extra {
+      display: inline-block;
+    }
+    .container {
+      grid-template-columns: 1fr 3fr;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .container {
+      grid-template-columns: 1fr 2fr;
+    }
   }
 </style>

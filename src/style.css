@@ -14,6 +14,8 @@
   --dm-script-font: 'Permanent Marker', cursive;
   --dm-display-font: 'League Gothic', sans-serif;
   --dm-stroke-weight: 3px;
+  --dm-max-width: 800px;
+  --dm-padding: 0 1rem;
 }
 
 body {
@@ -46,9 +48,9 @@ button {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  padding: 0 1rem;
+  padding: var(--dm-padding);
 }
 
 .grid-item {
-  max-width: 800px;
+  max-width: var(--dm-max-width);
 }

@@ -24,6 +24,7 @@
             />
           </svg>
         </button>
+        <DMGibson />
       </div>
     </div>
   </div>
@@ -31,6 +32,7 @@
 
 <script setup lang="ts">
   import DMCarousel from './DMCarousel.vue'
+  import DMGibson from './DMGibson.vue'
 </script>
 
 <style scoped>
