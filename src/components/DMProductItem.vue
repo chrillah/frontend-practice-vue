@@ -46,6 +46,7 @@ defineProps<{ product: Product }>()
   h1{
     margin: 0;
     padding: 0;
+    color: var(--dm-black);
   }
 
   .item {
