@@ -29,18 +29,16 @@
 </template>
 
 <script setup lang="ts">
-  import { defineProps } from 'vue'
 
-  export type Product = {
-    image: string
-    name: string
-    oldPrice: number
-    newPrice: number
-  }
+export type Product = {
+  image: string
+  name: string
+  oldPrice: number
+  newPrice: number
+}
 
-  const props = defineProps<{ product: Product }>()
+defineProps<{ product: Product }>()
 
-  console.log(props.product.name)
 </script>
 
 <style scoped>
