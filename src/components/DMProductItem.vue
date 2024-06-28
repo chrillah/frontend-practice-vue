@@ -51,12 +51,13 @@ defineProps<{ product: Product }>()
   .item {
     border: var(--dm-stroke-weight) solid var(--dm-black);
     background: var(--dm-peach);
-    height: 450px;
+    height: 480px;
     width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 1rem;
   }
 
   .image-item{
@@ -94,10 +95,12 @@ defineProps<{ product: Product }>()
     font-family: var(--dm-sans-font);
     text-transform: uppercase;
     letter-spacing: -1px;
+    margin: 8px 0;
   }
 
   .product-name{
     line-height: 5rem;
+    margin-bottom: 14px;
     font-family: var(--dm-display-font);
     font-size: 6rem;
     text-transform: uppercase;
